@@ -15,10 +15,10 @@
  */
 package org.apache.ibatis.io;
 
-import java.security.Security;
-
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
+
+import java.security.Security;
 
 public final class SerialFilterChecker {
   private static final Log log = LogFactory.getLog(SerialFilterChecker.class);

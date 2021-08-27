@@ -15,10 +15,10 @@
  */
 package org.apache.ibatis.reflection;
 
+import org.apache.ibatis.util.MapUtil;
+
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-
-import org.apache.ibatis.util.MapUtil;
 
 public class DefaultReflectorFactory implements ReflectorFactory {
   private boolean classCacheEnabled = true;

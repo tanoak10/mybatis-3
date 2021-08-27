@@ -15,10 +15,10 @@
  */
 package org.apache.ibatis.scripting;
 
+import org.apache.ibatis.util.MapUtil;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.ibatis.util.MapUtil;
 
 /**
  * @author Frank D. Martinez [mnesarco]
