@@ -32,7 +32,6 @@ public final class LogFactory {
 
   static {
     tryImplementation(LogFactory::useSlf4jLogging);
-    tryImplementation(LogFactory::useCommonsLogging);
     tryImplementation(LogFactory::useLog4J2Logging);
     tryImplementation(LogFactory::useLog4JLogging);
     tryImplementation(LogFactory::useJdkLogging);
@@ -63,9 +62,6 @@ public final class LogFactory {
     setImplementation(org.apache.ibatis.logging.slf4j.Slf4jImpl.class);
   }
 
-  public static synchronized void useCommonsLogging() {
-    setImplementation(org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.class);
-  }
 
   public static synchronized void useLog4JLogging() {
     setImplementation(org.apache.ibatis.logging.log4j.Log4jImpl.class);
